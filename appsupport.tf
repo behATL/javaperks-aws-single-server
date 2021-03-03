@@ -8,6 +8,7 @@ resource "aws_s3_bucket" "staticimg" {
         Region = var.hc_region
         Purpose = var.purpose
         TTL = var.ttl
+        hc-internet-facing = true
     }
 }
 
