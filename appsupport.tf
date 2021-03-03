@@ -9,6 +9,7 @@ resource "aws_s3_bucket" "staticimg" {
         Purpose = var.purpose
         TTL = var.ttl
         hc-internet-facing = true
+        terraform = true
     }
 }
 
